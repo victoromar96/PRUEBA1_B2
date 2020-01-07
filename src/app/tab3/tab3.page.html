@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      EDAD EXACTA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	
+	<div>
+		<ion-list-header color="secondary">
+          De clic abajo para saber la edad actual
+        </ion-list-header>
+        
+        <ion-button shape="round" (click)="CalcularEdad()">Calcular</ion-button>
+        
+        <p *ngIf="fechaNac">Edad actual: {{ edadActual }} </p>
+      </div>
+
+</ion-content>
